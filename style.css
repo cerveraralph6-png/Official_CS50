@@ -1,0 +1,132 @@
+:root {
+    --google-blue: #1a73e8;
+    --text-color: #202124;
+    --border-color: #dadce0;
+    --bg: #fff;
+    --link-hover: #1a73e8;
+    --nav-bg: #ececec;
+    --nav-txt: #000000;
+    --footer-bg: #ececec;
+    --btnclr: #fff;
+    --btnclr-: #dddddd62;
+    --srch: #f8f8f8;
+    --srch-bxshdw: #b8b8b8;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text-color);
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#links {
+    background-color: var(--nav-bg);
+    text-align: right;
+    padding: 10px 20px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+a {
+    font-weight: bold;
+    padding: 5px 15px;
+    color: var(--nav-txt);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    /* color: var(--link-hover); */
+    text-decoration: underline;
+}
+
+#search {
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    font-weight: bolder;
+    margin-bottom: 30px;
+    color: var(--text-color); 
+}
+
+#srch {
+    width: 600px;
+    max-width: 90%;
+    height: 45px;
+    font-size: 18px;
+    border-radius: 25px;
+    border: 1px solid var(--border-color);
+    padding: 0 15px;
+    background-color: var(--srch);
+    color: var(--text-color);
+    transition: border-color 0.3s ease;
+}
+
+#srch:hover {
+    
+    box-shadow: 0 0 10px var(--srch-bxshdw);
+}
+
+#srch:focus {
+    outline: none;
+    box-shadow: 0 0 5px var(--srch-bxshdw);
+}
+
+#btn {
+    margin-top: 20px;
+    padding: 10px 25px;
+    font-size: 18px;
+    border-radius: 15px;
+    border: none;
+    background-color: var(--btnclr-);
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+#btn:hover {
+    box-shadow: var(--text-color) 0 0 2px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--footer-bg);
+    color: var(--text-color);
+    border-top: 1px solid var(--border-color);
+}
+
+@media (max-width: 600px) {
+
+    #links a{
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+    #srch {
+        width: 80%;
+        height: 35px;
+        font-size: 16px;
+    }
+    #btn {
+        width: 80%;
+        font-size: 16px;
+    }
+}
