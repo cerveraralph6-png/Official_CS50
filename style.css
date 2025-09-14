@@ -11,6 +11,11 @@
     --btnclr-: #dddddd62;
     --srch: #f8f8f8;
     --srch-bxshdw: #b8b8b8;
+
+    --google-blue: #1a73e8;
+    --google-red: #ea4335;
+    --google-yellow: #ffce44;
+    --google-green: #34a853;
 }
 
 body {
@@ -32,6 +37,7 @@ body {
 }
 
 a {
+    font-size: 20px;
     font-weight: bold;
     padding: 5px 15px;
     color: var(--nav-txt);
@@ -40,7 +46,6 @@ a {
 }
 
 a:hover {
-    /* color: var(--link-hover); */
     text-decoration: underline;
 }
 
@@ -51,17 +56,40 @@ a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 50px;
+    padding-bottom: 200px;
 }
 
-
-
 h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 70px;
-    font-weight: bolder;
+    font-family: "Roboto";
+    font-size: 90px;
+    font-weight: bold;
     margin-bottom: 30px;
+    margin-top: -10px;
     color: var(--text-color); 
+}
+
+#G {
+    color: var(--google-blue);
+}
+
+#o1 {
+    color: var(--google-red);
+}
+
+#o2 {
+    color: var(--google-yellow);
+}
+
+#g {
+    color: var(--google-blue);
+}
+
+#l {
+    color: var(--google-green);
+}
+
+#e {
+    color: var(--google-red);
 }
 
 #srch {
@@ -69,7 +97,7 @@ h1 {
     max-width: 90%;
     height: 45px;
     font-size: 18px;
-    border-radius: 25px;
+    border-radius: 15px;
     border: 1px solid var(--border-color);
     padding: 0 15px;
     background-color: var(--srch);
@@ -78,55 +106,63 @@ h1 {
 }
 
 #srch:hover {
-    
     box-shadow: 0 0 10px var(--srch-bxshdw);
+    transition: 0.3s ease;
+    transform: scale(1.02);
 }
 
 #srch:focus {
     outline: none;
     box-shadow: 0 0 5px var(--srch-bxshdw);
+    transform: scale(1.02);
 }
 
-#btn {
+
+
+.btn {
     margin-top: 20px;
     padding: 10px 25px;
     font-size: 18px;
-    border-radius: 15px;
+    font-weight: bold;
+    border-radius: 13px;
     border: none;
     background-color: var(--btnclr-);
     color: var(--text-color);
     cursor: pointer;
 }
 
-#btn:hover {
-    box-shadow: var(--text-color) 0 0 2px;
+
+input[value="Search"]:hover {
+    background-color: var(--google-blue);
+    transition: 0.5s ease;
+    color: white;
+
 }
 
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: var(--footer-bg);
-    color: var(--text-color);
-    border-top: 1px solid var(--border-color);
+input[value="I'm Feeling Lucky"]:hover {
+    background-color: var(--google-yellow);
+    transition: 0.5s ease;
+    color: black;
+
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 
     #links a{
-        font-size: 14px;
+        font-size: 15px;
         padding: 5px 10px;
     }
 
     h1 {
-        font-size: 40px;
+        font-size: 70px;
     }
     #srch {
-        width: 80%;
-        height: 35px;
-        font-size: 16px;
+        width: 900%;
+        height: 40px;
+        font-size: 18px;
     }
     #btn {
-        width: 80%;
+        width: 60%;
         font-size: 16px;
     }
 }

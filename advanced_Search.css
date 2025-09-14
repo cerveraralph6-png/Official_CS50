@@ -32,6 +32,7 @@ body {
 
 #links a {
     font-weight: bold;
+    font-size: 20px;
     padding: 5px 15px;
     color: var(--nav-txt);
     text-decoration: none;
@@ -39,7 +40,6 @@ body {
 }
 
 #links a:hover {
-    color: var(--link-hover);
     text-decoration: underline;
 }
 
@@ -76,7 +76,7 @@ form {
 }
 
 label {
-    font-size: 12px;
+    font-size: 15px;
     font-weight: bold;
     color: #3c4043;
     user-select: none;
@@ -118,14 +118,6 @@ input[type="text"]:focus {
 
 .btn:active { 
     filter: brightness(0.9); 
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: var(--footer-bg);
-    color: var(--text-color);
-    border-top: 1px solid var(--border-color);
 }
 
 @media (max-width: 640px) {
