@@ -11,7 +11,6 @@
     --btnclr-: #dddddd62;
     --srch: #f8f8f8;
     --srch-bxshdw: #b8b8b8;
-
     --google-blue: #1a73e8;
     --google-red: #ea4335;
     --google-yellow: #ffce44;
@@ -60,12 +59,14 @@ a:hover {
 }
 
 h1 {
+    position: relative;
     font-family: "Roboto";
     font-size: 100px;
     font-weight: bold;
     margin-bottom: 30px;
     margin-top: -10px;
     color: var(--text-color); 
+    display: inline-block;
 }
 
 #G {
@@ -146,6 +147,17 @@ input[value="I'm Feeling Lucky"]:hover {
 
 }
 
+/*image-text is only for image search for the word "image"*/
+#image-text {
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+    color: var(--google-blue);
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 23px;
+}
+
 @media (max-width: 700px) {
 
     #links a{
@@ -164,5 +176,11 @@ input[value="I'm Feeling Lucky"]:hover {
     #btn {
         width: 60%;
         font-size: 16px;
+    }
+
+    #image-text {
+        font-size: 20px;
+        bottom: -5px;
+        right: -4px;
     }
 }
